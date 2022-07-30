@@ -7,12 +7,15 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: rgb(85, 85, 85);
+    background: linear-gradient(to right, rgb(38, 38, 38), rgb(65, 65, 65));
     color: white;
 }
 
 header{
-    background-color: rgb(85, 85, 85);
+    background: black;
+    box-shadow: 0 0.5rem 1rem rgba(120, 120, 120, 0.4);
+    position: sticky;
+    z-index: 1;     
     grid-area: header-nav;
 }
 
@@ -50,7 +53,7 @@ nav .nav__list {
     
 }
 .nav__link {
-    color: #41258e;
+    color: #ffffff;
 }
 
 .nav__list .nav__item {
@@ -134,7 +137,12 @@ section#banner {
     padding: 14px 10px 14px ;
     font-weight: 600;
     margin-bottom: 52px;
+    transition: all 0.6s ease;
 }
+
+    .intro__button:hover {
+        background: black;
+    }
 
 /* -------Seccion 2------- */
 
@@ -198,6 +206,11 @@ h2 {
 
 }
 
+.img__icon img {
+    width: 65px;
+    height: 65px;
+}
+
 .img__seccion1 {
     display: flex;
     flex-direction: column;
@@ -240,7 +253,7 @@ footer {
 }
 
 .footer__list__link {
-    color: #41258e;
+    color: #ffffff;
 }
 
 .box__2 {
