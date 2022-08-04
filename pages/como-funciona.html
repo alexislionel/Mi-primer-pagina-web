@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <!--Font Google-->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
@@ -17,49 +20,52 @@
 
 <body>
 
-    <div class="grid__layout2">
+    <!-- <div class="grid__layout2"> -->
         <!-- Incio Header-->
-        <header>
-            <div class="container__header animate__animated animate__fadeInDownBig">
+    <header class="sticky-top">
+        <div class="container__header animate__animated animate__fadeInDownBig">
+            <!--NAV BAR-->
+            <nav class="navbar navbar-expand-lg shadow navbar-dark ">
+                <div class="container">
 
-                <!--Nav Bar-->
-
-                <div>
-                    <a href="../index.html" class="logo">
-                        <img src="../imagenes/logo.png" alt="logo">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../imagenes/logo.png" alt="Logo" width="200px" />
                     </a>
-                </div>
-
-                <div>
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li class="nav__item">
-                                <a class="nav__link" href="como-funciona.html">Como Funciona</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white fw-bolder" aria-current="page" href="../index.html">Inicio</a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="precios.html">Precios</a>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white fw-bolder" href="como-funciona.html">Como Funciona</a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="nosotros.html">Nosotros</a>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white fw-bolder" href="precios.html">Precios</a>
                             </li>
-                            <li class="nav__item">
-                                <a class="nav__link" href="soporte.html">Soporte</a>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white fw-bolder" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a class="nav-link text-white fw-bolder" href="soporte.html">Soporte</a>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-
-
-            </div>
-        </header>
-        <!--Fin header-->
+            </nav>
+        </div>
+    </header>
+    <!--Fin header-->
 
         <!--Inicio Main-->
         <!-- <main> -->
             <section id="principal">
                 <!--Inicio Section 1-->
                 
-                <div class="container__tittle animate__animated animate__fadeInDownBig">
+                <div class="container__tittle text-center animate__animated animate__fadeInDownBig">
                     <h1 id="tittle">Como Funciona</h1>
                     <p>Una VPN tradicional redirecciona todas sus conexiones a través de servidores en el extranjero.
                         Como esos servidores están lejos de su computadora, los datos tienen que recorrer mayores
@@ -68,28 +74,28 @@
                         beneficios de una VPN, o sea, simular que está ubicado en otro lugar, pero manteniendo una
                         conexión ultrarrápida al mismo tiempo.</p>
                 </div>
-                <div class="row">
-                    <div class="container__seccion1">    
-                        <div class="caja1">
+                <div class="container container__seccion1">    
+                    <div class="row">
+                        <div class="caja1 justify-content-around">
                             <div class="img__text animate__animated animate__fadeInLeftBig">
-                                <img src="../imagenes/servers.png" alt="ruta de paquetes al servidor">
+                                <img src="../imagenes/servers.png" alt="ruta de paquetes al servidor" class="img-fluid">
                             </div>
-                            <div class="text__description animate__animated animate__fadeInRightBig">
+                            <div class="col-12 col-lg-6 text__description animate__animated animate__fadeInRightBig">
                                 <h2>CONEXION MULTIRUTA</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam debitis odio?
                                     Maiores voluptatibus iste tempore vel. Cumque nesciunt quos ratione ad, at praesentium eius,
                                     quibusdam sit sunt impedit odit.</p>
                             </div>
                         </div>
-                            <div class="caja2">
-                                <div class="text__description animate__animated animate__fadeInLeftBig">
+                            <div class="caja2 justify-content-around">
+                                <div class="col-12 col-lg-6 text__description animate__animated animate__fadeInLeftBig">
                                     <h2>SERVIDORES POR TODO EL MUNDO</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam debitis odio?
                                         Maiores voluptatibus iste tempore vel. Cumque nesciunt quos ratione ad, at praesentium
                                         eius, quibusdam sit sunt impedit odit.</p>
                                     </div>
                                     <div class="img__text animate__animated animate__fadeInRightBig">
-                                        <img src="../imagenes/server-world.png" alt="servidores alrededor del mundo">
+                                        <img src="../imagenes/server-world.png" alt="servidores alrededor del mundo" class="img-fluid">
                                     </div>
                             </div>    
                     </div>
@@ -132,6 +138,10 @@
                 </div>
             </footer>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
