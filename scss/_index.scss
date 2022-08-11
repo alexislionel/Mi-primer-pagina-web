@@ -1,0 +1,114 @@
+/* -------Seccion 1------- */
+
+#banner {
+    position: relative;
+    background-image: 
+    linear-gradient(
+    0deg,
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    )
+    ,url("../imagenes/bannercsgo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.container__text {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 10px;
+    
+    .intro__text {
+        margin: auto;
+        padding-top: 4rem;
+
+        h1 {
+            color: $color-principal;
+            font-weight: 900;
+            font-size: 3.3rem;
+            padding-bottom: 1rem;
+        }
+
+        p {
+            color: white;
+            max-width: 360px;
+            padding-bottom: 1rem;
+            font-size: 1rem;
+            line-height: 28px;
+        }
+
+        .intro__button {
+            font-size: 1rem;
+            border: none;
+            color: white;
+            background-color: $color-principal;
+            border-radius: 20px;
+            box-shadow: 1px 1px 20px -5px grey;
+            cursor: pointer;
+            padding: 14px 10px 14px ;
+            font-weight: 600;
+            margin-bottom: 52px;
+            transition: all 0.6s ease;
+
+            &:hover {
+                background: black;
+            }
+        }
+    }   
+}
+
+/* -------Seccion 2------- */
+
+h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: $color-principal;
+    margin: 15px 0;
+}
+
+.caja {
+    display: flex;
+    margin: 0 0.8rem 2rem 0;
+    align-items: center;
+    justify-content: center;
+
+    .img__icon {
+        padding-right: 1rem;
+        
+        img {
+            width: 65px;
+            height: 65px;
+        }    
+    }
+
+    .text__description {
+        P {
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 20px;
+            margin-left: 0.8rem;
+            max-width: 600px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: $color-principal;
+            margin-left: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+    }
+
+    .img__seccion1 {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 500px;
+            height: 310px;
+            margin-bottom: 0.7rem;
+        }
+    }
+}

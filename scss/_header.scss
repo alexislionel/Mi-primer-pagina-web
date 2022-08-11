@@ -1,0 +1,27 @@
+header {
+    background: black;
+    box-shadow: 0 0.5rem 1rem rgba(120, 120, 120, 0.4);
+    position: sticky;
+    z-index: 1;
+    
+        .container__header {
+            max-width: 1300px;
+            margin: auto;
+
+            .navbar {
+                padding: 0;
+                }
+        }
+}
+nav {
+
+    .nav-link {
+        color: white;
+        transition: .5s;
+
+        &:hover {
+            color: $color-principal;
+            }    
+        }
+            
+    }
