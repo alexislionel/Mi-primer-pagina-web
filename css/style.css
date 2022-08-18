@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 header {
   background: black;
   box-shadow: 0 0.5rem 1rem rgba(120, 120, 120, 0.4);
@@ -69,18 +76,18 @@ nav .nav-link:hover {
 
 /* -------Seccion 2------- */
 h2 {
-  text-align: center;
   font-size: 2.6rem;
-  font-weight: 900;
-  color: #41258e;
   margin: 15px 0;
+  text-align: center;
+  color: #41258e;
+  font-weight: 900;
 }
 
 .caja {
   display: flex;
+  justify-content: center;
   margin: 0 0.8rem 2rem 0;
   align-items: center;
-  justify-content: center;
 }
 .caja .img__icon {
   padding-right: 1rem;
@@ -103,17 +110,38 @@ h2 {
   margin-left: 0.8rem;
   margin-bottom: 0.8rem;
 }
-.caja .img__seccion1 {
+
+.img__seccion1 {
   display: flex;
   flex-direction: column;
 }
-.caja .img__seccion1 img {
+.img__seccion1 .img-fluid {
   width: 500px;
   height: 310px;
   margin-bottom: 0.7rem;
 }
 
-/* -------Footer------- */
+/* -------Como-Funciona------- */
+.container__tittle {
+  max-width: 1300px;
+  margin: 30px auto;
+  padding: 0 10px;
+}
+
+#tittle {
+  text-align: center;
+  color: #41258e;
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+#tittle__description {
+  text-align: center;
+  color: white;
+  padding-bottom: 1rem;
+  line-height: 25px;
+}
 
 .container__footer {
   display: flex;
@@ -132,7 +160,7 @@ h2 {
   flex-direction: column;
   padding: 0.4rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 800;
 }
 .box__1 .footer__list .footer__list__link {
   color: #ffffff;
@@ -144,9 +172,9 @@ h2 {
 }
 
 .box__2 {
-  max-width: 400px;
   display: flex;
   justify-content: center;
+  max-width: 400px;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -155,8 +183,6 @@ h2 {
   font-size: 2rem;
   font-weight: 800;
   margin: 0.4rem;
-  text-align: center;
-  color: #41258e;
 }
 .box__2 p {
   font-weight: 600;
@@ -166,7 +192,6 @@ h2 {
 }
 .box__2 .correo__box {
   height: 30px;
-  display: flex;
   padding: 7px;
 }
 .box__2 .correo__box .correo {
@@ -174,10 +199,88 @@ h2 {
   font-size: 1.2rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* -------Mobile First------- */
+@media screen and (max-width: 1079px) {
+  /* ----Seccion 1---- */
+  #banner {
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../imagenes/bannercsgo.png");
+    background-repeat: no-repeat;
+    background-position: 70%;
+  }
+  .container__text {
+    display: flex;
+    justify-content: center;
+  }
+  .container__text .intro__text {
+    max-width: 400px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 960px) {
+  /* ----Index---- */
+  /* ----Seccion 1---- */
+  .img__seccion1 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /* ----Index---- */
+  /* ----Header---- */
+  .container__header {
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  /* ----Seccion 1---- */
+  .intro__text h1 {
+    font-size: 3rem;
+  }
+  /* ----Seccion 2---- */
+  .row {
+    padding: 0px 10px;
+  }
+  .row .caja {
+    margin: 0 0 2rem 0;
+  }
+  .row .img__seccion1 {
+    display: none;
+  }
+  .container__footer {
+    justify-content: center;
+  }
+  .container__footer .footer__list__item {
+    align-items: center;
+  }
+  /* ----Como-Funciona---- */
+  /* ----Seccion 1---- */
+  .caja1 .img__text {
+    display: none;
+  }
+  .caja1 .text__description {
+    margin-left: 0;
+  }
+  .caja2 .text__description {
+    margin-right: 0;
+  }
+  .caja2 .text__description h2 {
+    font-size: 1.6rem;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to right, rgb(38, 38, 38), rgb(65, 65, 65));
+  color: white;
+  background: black;
+}
+
+.container {
+  max-width: 1300px;
 }
 
 /*# sourceMappingURL=style.css.map */

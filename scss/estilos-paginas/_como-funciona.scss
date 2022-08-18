@@ -1,0 +1,22 @@
+/* -------Como-Funciona------- */
+
+.container__tittle {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 0 10px;
+}
+
+#tittle {
+    text-align: center;
+    color: $color-principal;
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+#tittle__description {
+    text-align: center;
+    color: $text-color;
+    padding-bottom: 1rem;
+    line-height: 25px;
+}

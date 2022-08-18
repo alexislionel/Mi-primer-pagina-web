@@ -20,7 +20,7 @@
             flex-direction: column;
             padding: 0.4rem;
             font-size: 1rem;
-            font-weight: bold;
+            font-weight: 800;
         }
 
         .footer__list__link {
@@ -36,23 +36,20 @@
 }
 
 .box__2 {
+    @include flexCenter;
     max-width: 400px;
-    display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
     h2 {
         font-size: 2rem;
-        font-weight: 800;
+        font-weight: map-get($font-weights, medium);
         margin: 0.4rem;
-        text-align: center;
-        color: $color-principal;
     }
 
     p {
-        font-weight: 600;
+        font-weight: map-get($font-weights, regular);
         font-size: 1.2rem;
         line-height: 20px;
         margin-bottom: 0.4rem;
@@ -60,11 +57,10 @@
 
     .correo__box {
         height: 30px;
-        display: flex;
         padding: 7px;
 
         .correo {
-            font-weight: 600;
+            font-weight: map-get($font-weights, regular);
             font-size: 1.2rem;
         }
     }

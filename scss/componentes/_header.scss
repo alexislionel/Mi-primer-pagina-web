@@ -1,5 +1,5 @@
 header {
-    background: black;
+    background: $bg-color;
     box-shadow: 0 0.5rem 1rem rgba(120, 120, 120, 0.4);
     position: sticky;
     z-index: 1;
@@ -16,7 +16,7 @@ header {
 nav {
 
     .nav-link {
-        color: white;
+        color: $text-color;
         transition: .5s;
 
         &:hover {

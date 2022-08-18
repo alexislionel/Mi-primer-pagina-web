@@ -1,0 +1,11 @@
+@mixin subtittle ($size, $margin) { 
+    font-size: $size;
+    margin: $margin;
+    text-align: center;
+    color: $color-principal;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
