@@ -10,13 +10,87 @@
     text-align: center;
     color: $color-principal;
     font-weight: 900;
-    font-size: 2.5rem;
-    padding-bottom: 1rem;
+    font-size: rem;
 }
 
 #tittle__description {
     text-align: center;
     color: $text-color;
-    padding-bottom: 1rem;
     line-height: 25px;
+}
+
+.container__seccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    
+    .img__text img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .text__description {
+        max-width: 550px;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #41258e;
+            margin: 0.8rem;
+        }
+    }
+
+    .caja1 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        
+        .text__description {
+            margin-left: 20px;
+        }
+        
+    }
+
+    .caja2 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        .text__description {
+            margin-right: 20px;
+        }
+    }
+}
+
+.module {
+    @include flexCenter;
+    align-items: center;
+    flex-direction: column;
+
+    .icon {
+        img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .text__description {
+        text-align: center;
+        
+        h3 {
+            @include h3
+        }
+
+        P {
+            font-weight: map-get($font-weights, small);
+            font-size: 1rem;
+            line-height: 20px;
+            margin-left: 0.8rem;
+            max-width: 600px;
+        }
+    }
 }

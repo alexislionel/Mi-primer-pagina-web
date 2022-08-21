@@ -9,3 +9,12 @@
     display: flex;
     justify-content: center;
 }
+
+@mixin h3 {
+        font-size: 1.4rem;
+        font-weight: map-get($font-weights, medium);
+        color: $color-principal;
+        margin-left: 0.8rem;
+        margin-bottom: 0.8rem;
+
+}

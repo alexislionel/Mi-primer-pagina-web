@@ -63,6 +63,7 @@ nav .nav-link:hover {
   color: white;
   background-color: #41258e;
   border-radius: 20px;
+  border: 2px solid #41258e;
   box-shadow: 1px 1px 20px -5px grey;
   cursor: pointer;
   padding: 14px 10px 14px;
@@ -83,10 +84,16 @@ h2 {
   font-weight: 900;
 }
 
+.module {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .caja {
   display: flex;
   justify-content: center;
-  margin: 0 0.8rem 2rem 0;
+  margin-bottom: 1.5rem;
   align-items: center;
 }
 .caja .img__icon {
@@ -121,6 +128,13 @@ h2 {
   margin-bottom: 0.7rem;
 }
 
+/* -------Seccion 3------- */
+.text__info {
+  position: relative;
+  text-align: left;
+  margin-bottom: 8rem;
+}
+
 /* -------Como-Funciona------- */
 .container__tittle {
   max-width: 1300px;
@@ -132,21 +146,191 @@ h2 {
   text-align: center;
   color: #41258e;
   font-weight: 900;
-  font-size: 2.5rem;
-  padding-bottom: 1rem;
+  font-size: rem;
 }
 
 #tittle__description {
   text-align: center;
   color: white;
-  padding-bottom: 1rem;
   line-height: 25px;
+}
+
+.container__seccion1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+.container__seccion1 .img__text img {
+  width: 500px;
+  height: 300px;
+}
+.container__seccion1 .text__description {
+  max-width: 550px;
+  text-align: center;
+}
+.container__seccion1 .text__description h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #41258e;
+  margin: 0.8rem;
+}
+.container__seccion1 .caja1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container__seccion1 .caja1 .text__description {
+  margin-left: 20px;
+}
+.container__seccion1 .caja2 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container__seccion1 .caja2 .text__description {
+  margin-right: 20px;
+}
+
+.module {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.module .icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+.module .text__description {
+  text-align: center;
+}
+.module .text__description h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #41258e;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.module .text__description P {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 20px;
+  margin-left: 0.8rem;
+  max-width: 600px;
+}
+
+.card-header h2 {
+  margin: 0;
+  color: black;
+}
+.card-header .violet {
+  color: #41258e;
+}
+
+.card-body {
+  padding-bottom: 0;
+}
+.card-body .total-price {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.card-body h3 {
+  margin-bottom: 0;
+}
+.card-body h3 .currency {
+  font-size: 1.9rem;
+}
+.card-body h3 .amount {
+  font-size: 2.5rem;
+}
+.card-body h3 .month {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.card-body p {
+  margin-bottom: 0;
+}
+
+.save .rectangle, .save .rectangle--dark {
+  display: inline-block;
+  padding: 6px 8px;
+  background: #41258e;
+  color: #fff;
+  border: 2px solid black;
+  font-size: 16px;
+  border-radius: 0;
+  margin: 8px;
+  font-weight: 400;
+}
+.save .rectangle--dark {
+  background: rgb(75, 75, 75);
+}
+
+.card-footer .btn {
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: #41258e;
+  border-radius: 3px;
+  box-shadow: 1px 1px 20px -5px grey;
+  cursor: pointer;
+  padding: 7px 7px;
+  font-weight: 600;
+  border: 2px solid #41258e;
+  transition: all 0.6s ease;
+}
+.card-footer .btn:hover {
+  background: black;
+}
+
+.banner__promo {
+  background: #41258e;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__promo h3 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: white;
+  line-height: 45px;
+  text-align: center;
+}
+
+.text__description h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #41258e;
+  margin-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.text__description .intro__button {
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background-color: #41258e;
+  border-radius: 20px;
+  border: 2px solid #41258e;
+  box-shadow: 1px 1px 10px -5px grey;
+  cursor: pointer;
+  padding: 6px 6px;
+  font-weight: 600;
+  margin-bottom: 52px;
+  transition: all 0.6s ease;
+}
+.text__description .intro__button:hover {
+  background: black;
 }
 
 .container__footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 1.5rem 0;
 }
 
 .box__1 .logo__footer img {
@@ -274,7 +458,6 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(to right, rgb(38, 38, 38), rgb(65, 65, 65));
   color: white;
   background: black;
 }

@@ -4,6 +4,8 @@
 @import "./componentes/header";
 @import "./estilos-paginas/index";
 @import "./estilos-paginas/como-funciona";
+@import "./estilos-paginas/precios";
+@import "./estilos-paginas/nosotros";
 @import "./componentes/footer";
 @import "./componentes/media-queries";
 
@@ -13,7 +15,6 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, rgb(38, 38, 38), rgb(65, 65, 65));
     color: $text-color;
     background: $bg-color;
 }
