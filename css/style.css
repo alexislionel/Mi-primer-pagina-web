@@ -326,6 +326,15 @@ h2 {
   background: black;
 }
 
+.box-shadow {
+  box-shadow: 0rem 0rem 2.5rem 3px rgba(65, 37, 142, 0.2705882353);
+}
+
+.btn {
+  background-color: #41258e;
+  color: white;
+}
+
 .container__footer {
   display: flex;
   flex-wrap: wrap;
@@ -460,10 +469,6 @@ body {
   font-family: "Inter", sans-serif;
   color: white;
   background: black;
-}
-
-.container {
-  max-width: 1300px;
 }
 
 /*# sourceMappingURL=style.css.map */

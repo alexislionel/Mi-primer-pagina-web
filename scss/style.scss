@@ -6,6 +6,7 @@
 @import "./estilos-paginas/como-funciona";
 @import "./estilos-paginas/precios";
 @import "./estilos-paginas/nosotros";
+@import "./estilos-paginas/soporte";
 @import "./componentes/footer";
 @import "./componentes/media-queries";
 
@@ -17,8 +18,4 @@ body {
     font-family: 'Inter', sans-serif;
     color: $text-color;
     background: $bg-color;
-}
-
-.container {
-    max-width: 1300px;
 }
