@@ -10,7 +10,6 @@
     text-align: center;
     color: $color-principal;
     font-weight: 900;
-    font-size: rem;
 }
 
 #tittle__description {
@@ -66,9 +65,7 @@
 }
 
 .module {
-    @include flexCenter;
     align-items: center;
-    flex-direction: column;
 
     .icon {
         img {

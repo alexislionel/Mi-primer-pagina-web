@@ -108,5 +108,32 @@
             }
         }
     }
+/* ----Precios---- */
 
+    /* ----Seccion 2---- */
+
+    .text__promo {
+
+        h3 {
+            font-size: 1.5rem;
+            line-height: 38px;
+        }
+    }
 }
+
+
+@media (max-width: 576px) {
+
+/* ----Precios---- */
+
+    /* ----Seccion 2---- */
+
+    .text__promo {
+
+        h3 {
+            font-size: 1.2rem;
+            line-height: 32px;
+        }
+    }
+}
+
